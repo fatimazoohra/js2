@@ -1,23 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<title>ex3</title>
 </head>
 <body>
-	<form action="#" method="post">
-		<input type="text" id="text"/>
-		<button  id="submit" value="Envoyer"></button>
+	<form name="Maforme" method="post" onsubmit="return validerForm()">
+		<input type="text" name="txt">
+		<input type="submit" value="Submit">
+		<p id="message"></p>
 
 	</form>
 
-	<script >
-		var txt = document.getElementById('text');
-		if(document.getElementById('submit').clicked == true){
-			if(txt!=''){
-				alert('good');
-			}
-			else{alert('noooo');}
-		}
-	</script>
+<script type="text/javascript" src="ex3.js"></script>
 </body>
 </html>
